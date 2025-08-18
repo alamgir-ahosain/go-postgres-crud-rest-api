@@ -1,4 +1,4 @@
-## GO PostgreSql CRUD REST API
+## GO PostgreSQL CRUD REST API
 Build a `CRUD` `REST API` in `Go (Golang)` using `PostgreSQL` database and `Gorilla/Mux` framework. 
 
 >For PostgreSQL
@@ -42,31 +42,31 @@ GO-POSTGRES-CRUD-REST-API
 │── internal/
 │   ├── api/
 │   │   ├── handlers/
-│   │   │   ├── get_users/
-│   │   │   │   ├── get_user_by_id.go
-│   │   │   │   ├── get_users.go
-│   │   │   │   ├── create_user.go
-│   │   │   │   ├── delete_user.go
-│   │   │   │   ├── update_user.go
+│   │   │   ├── get_users/            
+│   │   │   │   ├── get_user_by_id.go # get user by ID function
+│   │   │   │   ├── get_users.go      # get all users function
+│   │   │   │   ├── create_user.go    # create user function
+│   │   │   │   ├── delete_user.go    # delete user function
+│   │   │   │   ├── update_user.go    # update user function 
 │   │   ├── routes/
-│   │       └── routes.go
+│   │       └── routes.go             # all routes declared here
 │
 │── config/
-│   └── .env
+│   └── .env                          # configuration environment 
 │
 │── db/
-│   └── postgreSql.go
+│   └── postgreSql.go                 # postgreSQL database connection setup
 │
 │── models/
-│   └── model.go
+│   └── model.go                      # User model definition
 │
 │── services/
-│   └── service.go
+│   └── service.go                    # Helper function 
 │
-│── main.go
-│── go.mod
-│── go.sum
-│── README.md
+│── main.go                           # Main entry file 
+│── go.mod                            # Go module definition
+│── go.sum                            # Go dependencies checksums
+│── README.md                         # Project documentation for MySQL
 
 ```
 --- 
@@ -80,7 +80,7 @@ GO-POSTGRES-CRUD-REST-API
 |    4   | PUT    | /users/{id}    | full update user by id        |
 |    5   | DELETE | /users/{id}    | delete user by id             |
 
-## Testing the CRUD API with Postman
+## Testing the CRUD API with Postman or Thunder Client( VS code extension)
 #### 1. Get All Users
   Method: GET<br> URL: http://localhost:8000/users<br>
   
@@ -102,3 +102,4 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 
 # Contributing  
 Contributions are welcome! Feel free to fork the repo and create a pull request.
+
