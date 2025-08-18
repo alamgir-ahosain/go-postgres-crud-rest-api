@@ -45,23 +45,23 @@ GO-POSTGRES-CRUD-REST-API
 │   │   │   ├── get_users/            
 │   │   │   │   ├── get_user_by_id.go # get user by ID function
 │   │   │   │   ├── get_users.go      # get all users function
-│   │   │   │   ├── create_user.go    # create user function
-│   │   │   │   ├── delete_user.go    # delete user function
-│   │   │   │   ├── update_user.go    # update user function 
+│   │   │   │── create_user.go        # create user function
+│   │   │   │── delete_user.go        # delete user function
+│   │   │   │── update_user.go        # update user function 
 │   │   ├── routes/
 │   │       └── routes.go             # all routes declared here
-│
-│── config/
-│   └── .env                          # configuration environment 
-│
-│── db/
-│   └── postgreSql.go                 # postgreSQL database connection setup
-│
-│── models/
-│   └── model.go                      # User model definition
-│
-│── services/
-│   └── service.go                    # Helper function 
+│   │
+│   │── config/
+│   │   │── .env                      # configuration environment 
+│   │
+│   │── db/
+│   │   │── postgreSql.go             # postgreSQL database connection setup
+│   │
+│   │── models/
+│   │   │── model.go                  # User model definition
+│   │
+│   │── services/
+│   │   │── service.go                # Helper function 
 │
 │── main.go                           # Main entry file 
 │── go.mod                            # Go module definition
@@ -102,4 +102,5 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 
 # Contributing  
 Contributions are welcome! Feel free to fork the repo and create a pull request.
+
 
