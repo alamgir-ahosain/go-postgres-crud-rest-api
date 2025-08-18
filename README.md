@@ -39,6 +39,11 @@ go run main.go
 ##  Project Structure
 ```plaintext
 GO-POSTGRES-CRUD-REST-API
+
+│── cmd/
+│   │─── MyApp
+│   │    ├── server.go                # main serve file
+│   │
 │── internal/
 │   ├── api/
 │   │   ├── handlers/
@@ -102,5 +107,6 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 
 # Contributing  
 Contributions are welcome! Feel free to fork the repo and create a pull request.
+
 
 
