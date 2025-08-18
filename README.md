@@ -71,7 +71,7 @@ GO-POSTGRES-CRUD-REST-API
 │── main.go                           # Main entry file 
 │── go.mod                            # Go module definition
 │── go.sum                            # Go dependencies checksums
-│── README.md                         # Project documentation for MySQL
+│── README.md                         # Project documentation 
 
 ```
 --- 
@@ -107,6 +107,7 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 
 # Contributing  
 Contributions are welcome! Feel free to fork the repo and create a pull request.
+
 
 
 
