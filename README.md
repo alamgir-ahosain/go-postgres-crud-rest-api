@@ -1,0 +1,104 @@
+## GO PostgreSql CRUD REST API
+Build a `CRUD` `REST API` in `Go (Golang)` using `PostgreSQL` database and `Gorilla/Mux` framework. 
+
+>For PostgreSQL
+## Installation
+1. **Clone the Repository**
+ ```bash
+https://github.com/alamgir-ahosain/go-postgres-crud-rest-api.git
+```
+2. **Install Dependencies**<br>
+ ```bash
+go get github.com/lib/pql
+go get -u github.com/gorilla/mux
+go get github.com/joho/godotenv
+```
+
+##  Database Setup
+Login to PostgreSQL and create the database and table:
+```sql
+CREATE DATABASE goDB;
+USE goDB;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,         
+    sid VARCHAR(128) NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    cgpa NUMERIC(5,2)             
+);
+```
+## Run the Application:
+1. Start PostgreSQL server.  
+2. Update database connection in `db/postgreSql.go`
+3. Configure `.env` in `config/.env`
+4. Run the Project:
+```go
+go run main.go
+```
+   
+##  Project Structure
+```plaintext
+GO-POSTGRES-CRUD-REST-API
+│── internal/
+│   ├── api/
+│   │   ├── handlers/
+│   │   │   ├── get_users/
+│   │   │   │   ├── get_user_by_id.go
+│   │   │   │   ├── get_users.go
+│   │   │   │   ├── create_user.go
+│   │   │   │   ├── delete_user.go
+│   │   │   │   ├── update_user.go
+│   │   ├── routes/
+│   │       └── routes.go
+│
+│── config/
+│   └── .env
+│
+│── db/
+│   └── postgreSql.go
+│
+│── models/
+│   └── model.go
+│
+│── services/
+│   └── service.go
+│
+│── main.go
+│── go.mod
+│── go.sum
+│── README.md
+
+```
+--- 
+##  API endpoints table
+
+| number | method | endpoint       |     description               |
+| ------ | ------ | -------------- | ------------------------------|
+|    1   | GET    | /users         | get all users                 |
+|    2   | GET    | /users/{id}    | get user by id                |
+|    3   | POST   | /users         | create new user               |
+|    4   | PUT    | /users/{id}    | full update user by id        |
+|    5   | DELETE | /users/{id}    | delete user by id             |
+
+## Testing the CRUD API with Postman
+#### 1. Get All Users
+  Method: GET<br> URL: http://localhost:8000/users<br>
+  
+#### 2. Get a single User
+  Method: GET<br> URL: http://localhost:8000/users/1<br>
+  
+#### 3. Create a new  Users
+  Method: POST<br> URL: http://localhost:8000/users<br>
+  
+#### 4. Update a User
+  Method: PUT<br> URL: http://localhost:8000/users/1<br>
+
+#### 5. Delete a User
+  Method: DELETE<br> URL: http://localhost:8000/users/1<br>
+
+---
+# Thank You for Checking Out This Repository!
+Your feedback is valuable! Please share your thoughts and suggestions for improvement via [GitHub Issues](https://github.com/alamgir-ahosain/go-postgres-crud-rest-api/issues).
+
+# Contributing  
+Contributions are welcome! Feel free to fork the repo and create a pull request.
