@@ -12,7 +12,7 @@ func RegisterRoutes(r *mux.Router) {
 
 	r.HandleFunc("/users", handlers.CreateUser).Methods("POST")
 
-	// r.HandleFunc("/users/{id}", handlers.UpdateUser).Methods("PUT")
+	r.HandleFunc("/users/{id}", handlers.UpdateUser).Methods("PUT")
 
 	// r.HandleFunc("/users/{id}", handlers.DeleteUser).Methods("DELETE")
 }
