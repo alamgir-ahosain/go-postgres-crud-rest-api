@@ -9,7 +9,7 @@ https://github.com/alamgir-ahosain/go-postgres-crud-rest-api.git
 ```
 2. **Install Dependencies**<br>
  ```bash
-go get github.com/lib/pql
+go get github.com/lib/pq
 go get -u github.com/gorilla/mux
 go get github.com/joho/godotenv
 ```
@@ -107,6 +107,7 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 
 # Contributing  
 Contributions are welcome! Feel free to fork the repo and create a pull request.
+
 
 
 
